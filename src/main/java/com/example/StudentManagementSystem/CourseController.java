@@ -24,8 +24,8 @@ public class CourseController {
 
     @GetMapping("/addcourse")
     public String add(Model model) {
-        List<Course> listcourse = new ArrayList<Course>();
-        model.addAttribute("listcourse", listcourse);
+        //List<Course> listcourse = new ArrayList<Course>();
+       // model.addAttribute("listcourse", listcourse);
         model.addAttribute("course", new Course());
         return "addCourse";
     }
